@@ -1,0 +1,29 @@
+NOME CASO D’USO -> InserisciContatto
+PORTATA -> Rubrica
+LIVELLO -> Utente
+ATTORE PRIMARIO -> Utente
+PARTI INTERESSATE E INTERESSI -> Interessa all’utente perchè desidera inserire un contatto nella rubrica
+PRE-CONDIZIONI -> L’utente deve essere loggato con il suo username
+GARANZIA DI SUCCESSO -> Deve essere aggiunto il contatto nella rubrica
+SCENARIO PRINCIPALE DI SUCCESSO -> L’utente inserisce almeno nome, cognome, telefono del contatto e la rubrica conferma l’inserimento
+ESTENSIONI -> L’utente inserisce un contatto senza nessun parametro e quindi l’inserimento fallisce
+REQUISITI SPECIALI -> La rubrica può contenere massimo 100 contatti. La rubrica deve essere in grado di inserire il contatto il più velocemente possibile.
+VARIANTI TECNOLOGICHE E DEI DATI -> Ogni contatto è caratterizzato da un nome univoco, una descrizione, e uno o più numeri di telefono (fisso casa, ufficio, cellulare, etc)
+FREQ. DI RIPETIZIONE -> L’inserimento di un contatto può avvenire raramente o verificarsi molto spesso. Questo dipende dall’utente.
+VARIE -> I contatti possono essere aggiunti in modalità “protetta”, in modo da impedire la rimozione dalla rubrica
+
+------------------------------------
+
+NOME CASO D’USO -> RimuoviContatto
+PORTATA -> Rubrica
+LIVELLO -> Utente
+ATTORE PRIMARIO -> Utente
+PARTI INTERESSATE E INTERESSI -> Interessa all’utente perchè desidera rimuovere un contatto dalla rubrica
+PRE-CONDIZIONI -> L’utente deve essere loggato con il suo username
+GARANZIA DI SUCCESSO -> Deve essere rimosso il contatto dalla rubrica
+SCENARIO PRINCIPALE DI SUCCESSO -> L’utente rimuove il contatto e la rubrica conferma la rimozione
+ESTENSIONI -> L’utente cerca di rimuovere un contatto "protetto" ma la rubrica non conferma la rimozione
+REQUISITI SPECIALI -> La rubrica deve essere in grado di rimuovere il contatto (se è possibile farlo) il più velocemente possibile.
+VARIANTI TECNOLOGICHE E DEI DATI -> ---
+FREQ. DI RIPETIZIONE -> La rimozione di un contatto può avvenire raramente o verificarsi molto spesso. Questo dipende dall’utente.
+VARIE -> ---
